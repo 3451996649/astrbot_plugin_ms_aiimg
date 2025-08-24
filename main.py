@@ -6,7 +6,7 @@ import asyncio
 import random
 import json
 
-@register("ms_aiimg", "", "接入魔搭社区文生图模型。使用 /aiimg <提示词> 生成图片。", "1.0")
+@register("ms_aiimg", "竹和木", "接入魔搭社区文生图模型。使用 /aiimg <提示词> 生成图片。", "1.0")
 class ModFlux(Star):
     def __init__(self, context: Context, config: dict):
         super().__init__(context)
