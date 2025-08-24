@@ -1,9 +1,16 @@
-# helloworld
+# Astr接入魔搭文生图模型插件
 
-AstrBot 插件模板
+## 使用方法
+使用命令格式：`/aiimg <提示词>`
 
-A template plugin for AstrBot plugin feature
+## 配置说明
+- API地址：文生图服务器地址
+- API密钥：访问密钥
+- 模型：使用的AI模型
+- 分辨率：生成图片的尺寸
+- 推理步数：生成质量控制
+- 种子ID：控制生成结果的随机性
 
-# 支持
-
-[帮助文档](https://astrbot.app)
+其他说明
+ - 魔搭API每天有一定的次数限制以及请求频率限制
+ - 该项目基于项目astrbot_plugin_flux进行简单更改，仅适配魔搭推理接口
