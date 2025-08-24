@@ -2,7 +2,7 @@
     "api_url": {
         "description": "API 接口地址",
         "type": "string",
-        "default": "https://api.siliconflow.cn/v1/images/generations",
+        "default": "https://api-inference.modelscope.cn/",
         "hint": "API服务器地址，如果你不知道你在做什么，那就默认就行。"
     },
     "api_key": {
@@ -15,13 +15,13 @@
     "model": {
         "description": "使用的模型名称",
         "type": "string",
-        "default": "black-forest-labs/FLUX.1-dev",
+        "default": "Qwen/Qwen-Image",
         "hint": "AI模型的名称"
     },
     "size": {
         "description": "生成图片的分辨率",
         "type": "string",
-        "default": "1024x1024",
+        "default": "1080x1920",
         "hint": "图片分辨率，格式为：宽x高，例如：1024x1024"
     },
     "num_inference_steps": {
