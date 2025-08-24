@@ -22,7 +22,7 @@
         "description": "生成图片的分辨率",
         "type": "string",
         "default": "1080x1920",
-        "hint": "图片分辨率，格式为：宽x高，例如：1024x1024"
+        "hint": "图片分辨率，格式为：宽x高，例如：1080x1920（竖屏）"
     },
     "num_inference_steps": {
         "description": "推理步数",
@@ -43,3 +43,4 @@
         "hint": ""
     }
 }
+
