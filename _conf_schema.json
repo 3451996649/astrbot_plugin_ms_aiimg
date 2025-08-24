@@ -1,0 +1,45 @@
+{
+    "api_url": {
+        "description": "API 接口地址",
+        "type": "string",
+        "default": "https://api.siliconflow.cn/v1/images/generations",
+        "hint": "API服务器地址，如果你不知道你在做什么，那就默认就行。"
+    },
+    "api_key": {
+        "description": "API 密钥",
+        "type": "string",
+        "hint": "请前往modelscope注册账号，并获取 API_Key",
+        "default": "API_Key",
+        "obvious_hint": true
+    },
+    "model": {
+        "description": "使用的模型名称",
+        "type": "string",
+        "default": "black-forest-labs/FLUX.1-dev",
+        "hint": "AI模型的名称"
+    },
+    "size": {
+        "description": "生成图片的分辨率",
+        "type": "string",
+        "default": "1024x1024",
+        "hint": "图片分辨率，格式为：宽x高，例如：1024x1024"
+    },
+    "num_inference_steps": {
+        "description": "推理步数",
+        "type": "int",
+        "default": 20,
+        "hint": "生成图片时的推理步数，数值越大生成质量越高但速度越慢"
+    },
+    "seed": {
+        "description": "种子ID",
+        "type": "string",
+        "default": "随机",
+        "hint": "用于控制生成结果的随机性，输入'随机'则自动生成随机种子"
+    },
+    "enable_translation": {
+        "description": "启用中文翻译(已弃用)",
+        "type": "bool",
+        "default": false,
+        "hint": ""
+    }
+}
