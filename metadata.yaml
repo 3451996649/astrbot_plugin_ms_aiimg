@@ -1,6 +1,6 @@
-name: astrbot_plugin_ms_aiimg
-desc: 接入魔搭社区文生图模型
-help: 使用方法：/aiimg <提示词>
-version: v1.0
+name: active_aiimg
+desc: 将AI接入modelscope的生图API
+help: 可以使用aiimg生成图片或通过自然语言让llm生成，用法为/aiimg <提示词>
+version: v1.2
 author: 竹和木
 repo: https://github.com/3451996649/astrbot_plugin_ms_aiimg
