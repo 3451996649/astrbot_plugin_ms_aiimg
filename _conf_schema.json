@@ -12,35 +12,21 @@
         "default": "API_Key",
         "obvious_hint": true
     },
+    "size":{
+	    "description": "图片大小",
+	    "type": "string",
+	    "default": "1080x1920"
+    },
     "model": {
         "description": "使用的模型名称",
         "type": "string",
         "default": "Qwen/Qwen-Image",
         "hint": "AI模型的名称"
     },
-    "size": {
-        "description": "生成图片的分辨率",
+    "provider": {
+        "description": "模型提供商，可选OpenAI或MS",
         "type": "string",
-        "default": "1080x1920",
-        "hint": "图片分辨率，格式为：宽x高，例如：1080x1920（竖屏）"
-    },
-    "num_inference_steps": {
-        "description": "推理步数",
-        "type": "int",
-        "default": 20,
-        "hint": "生成图片时的推理步数，数值越大生成质量越高但速度越慢"
-    },
-    "seed": {
-        "description": "种子ID",
-        "type": "string",
-        "default": "随机",
-        "hint": "用于控制生成结果的随机性，输入'随机'则自动生成随机种子"
-    },
-    "enable_translation": {
-        "description": "启用中文翻译(已弃用)",
-        "type": "bool",
-        "default": false,
-        "hint": ""
+        "default": "MS",
+        "hint": "可选项：OpenAI、MS"
     }
 }
-
