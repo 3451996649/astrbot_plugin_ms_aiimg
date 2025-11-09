@@ -33,7 +33,7 @@ class ModFlux(Star):
             "prompt": prompt,
             "seed": current_seed,
             "size": size,
-            "num_inference_steps": "20",
+            "num_inference_steps": "30",
         }
         
         async with session.post(
@@ -104,12 +104,13 @@ class ModFlux(Star):
         '''
         
         try:
-            # 添加一个奇怪的检查，不知道为什么加了这行代码就正常了，或许是赛博佛祖罢
-            if self is None:
-                yield event.plain_result("你还不够虔诚，所以没有得到佛祖的庇佑导致发生了示例未初始化错误")
-                return
             # 根据提供商发送不同的请求
             image_url = await self._request_image(prompt, size)
+
+            # 添加一个奇怪的检查，不知道为什么加了这行代码就正常了，或许是赛博佛祖罢
+            if self is None:
+                yield event.plain_result("你还不够虔诚，所以没有得到佛祖的庇佑导致发生了错误")
+                return
             
             # 拿到结果后，再发送最终的图片消息
             chain = [Image.fromURL(image_url)]
